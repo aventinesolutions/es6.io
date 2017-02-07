@@ -4,7 +4,7 @@ const weather = new Promise((resolve) => {
   }, 2000);
 });
 
-const tweets = new Promise((resolve, reject) => {
+const tweets = new Promise((resolve) => {
   setTimeout(() => {
     resolve(['I like cake', 'BBQ is good too!']);
   }, 500);
@@ -22,9 +22,7 @@ const streetCarsPromise = fetch('http://data.ratp.fr/api/datasets/1.0/search/?q=
 
 Promise
   .all([postsPromise, streetCarsPromise])
-  .then(responses => {
-    return Promise.all(responses.map(res => res.json()));
-  })
+  .then(responses => Promise.all(responses.map(res => res.json())))
   .then(responses => {
     console.log(responses);
   });
