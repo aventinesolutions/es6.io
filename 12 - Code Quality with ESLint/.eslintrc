@@ -5,8 +5,8 @@
   },
   "extends": "airbnb",
   "rules": {
-    "no-console": "warn",
+    "no-console": "error",
     "no-unused-vars": 1
   },
-//  "plugins": ["html", "markdown"]
+  "plugins": ["html", "markdown"]
 }
