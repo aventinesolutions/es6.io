@@ -1,0 +1,36 @@
+{
+  "name": "es6modules",
+  "version": "1.0.0",
+  "description": "Web Bos Teaches NPM Packaging",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --progress --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aventinesolutions/es6.io.git"
+  },
+  "keywords": [
+    "learning"
+  ],
+  "author": "Matthew Eichler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aventinesolutions/es6.io/issues"
+  },
+  "homepage": "https://github.com/aventinesolutions/es6.io#readme",
+  "dependencies": {
+    "flickity": "^2.0.5",
+    "insane": "^2.6.2",
+    "jquery": "^3.1.1",
+    "jsonp": "^0.2.1",
+    "lodash": "^4.17.4",
+    "slug": "^0.9.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.1",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "webpack": "^2.2.1"
+  }
+}
